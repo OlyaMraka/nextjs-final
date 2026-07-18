@@ -1,0 +1,23 @@
+.star-rate-block {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5.625rem;
+    min-height: 2rem;
+    background-color: rgba(33, 26, 21, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.25rem;
+    padding: 4px 0.625rem;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.no-rate {
+    font-size: 0.85rem;
+    color: #d9b38c;
+    font-weight: 500;
+    white-space: nowrap;
+}

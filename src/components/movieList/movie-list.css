@@ -1,0 +1,29 @@
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    background-color: #211a15;
+    min-height: 60vh;
+}
+
+@media (max-width: 75rem) {
+    .movie-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .movie-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .movie-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

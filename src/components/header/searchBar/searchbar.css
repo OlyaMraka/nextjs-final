@@ -1,0 +1,51 @@
+.searchbar-block {
+    flex: 1;
+    max-width: 30rem;
+    min-width: 0;
+}
+
+.searchbar-block .input-group {
+    background-color: #2b221b;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 0.875rem;
+    overflow: hidden;
+    box-shadow: 0 2px 0.625rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.searchbar-block .input-group:focus-within {
+    border-color: #d19a75;
+    box-shadow: 0 0 0 3px rgba(209, 154, 117, 0.15);
+}
+
+.searchbar-block .form-control {
+    background-color: transparent !important;
+    border: none !important;
+    color: #ede4da !important;
+    padding: 0.75rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: none !important;
+}
+
+.searchbar-block .form-control::placeholder {
+    color: #a89484;
+    font-weight: 400;
+}
+
+.searchbar-block .input-group-text {
+    background-color: #362b22 !important;
+    border: none !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.07) !important;
+    color: #ede4da !important;
+    padding: 0.75rem 1.375rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.searchbar-block .input-group-text:hover {
+    background-color: #d19a75 !important;
+    color: #211a15 !important;
+}

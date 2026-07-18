@@ -1,0 +1,46 @@
+.movie-card-main-info {
+    padding: 0.875rem 1rem 1rem;
+    border-left: 3px solid transparent;
+    transition: border-color 0.25s ease;
+}
+
+.movie-card-main-info h4 {
+    margin: 0 0 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #ede4da;
+    font-family: "Inter", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-card-main-info .additional-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.movie-card-main-info .additional-info p {
+    margin: 0 0 2px;
+    font-size: 0.78125rem;
+    line-height: 1.5;
+    color: #a89484;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movie-card-main-info .additional-info span {
+    font-size: 0.78125rem;
+    color: #a89484;
+    font-weight: 500;
+}
+
+.movie-genres-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.625rem;
+}
