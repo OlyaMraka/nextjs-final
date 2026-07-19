@@ -2,8 +2,8 @@ import {Genre} from "@/src/models/genreModels/GenreTypes";
 import {Movie} from "@/src/models/movieModels/Movie";
 import {MovieInfo} from "@/src/models/movieModels/MovieInfo";
 
-const apiKey = process.env.VITE_MOVIE_API_KEY;
-const apiUrl = process.env.VITE_MOVIE_API_URL
+const apiKey = process.env.NEXTJS_MOVIE_API_KEY;
+const apiUrl = process.env.NEXTJS_MOVIE_API_URL
 
 
 export const getGenres = async (): Promise<Genre[]> => {
