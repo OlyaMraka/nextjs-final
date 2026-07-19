@@ -27,6 +27,11 @@ export type MovieInfoProps = {
 
 export type MovieListComponentProps = {
     page: number;
+    genres: Genre[];
     filterGenres?: string;
     query?: string;
+}
+
+export type HeaderComponentProps = {
+    genres: Genre[];
 }

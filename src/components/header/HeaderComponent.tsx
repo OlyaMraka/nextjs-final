@@ -1,13 +1,11 @@
 import { FC } from "react";
 import "./header-component.css";
-import { getGenres } from "@/src/services/api.service";
 import GenreDropdown from "@/src/components/header/genreDropdown/GenreDropdawn";
 import SearchBar from "@/src/components/header/searchBar/Searchbar";
 import SelectedGenres from "@/src/components/header/selectedGenres/SelectedGenres";
+import {HeaderComponentProps} from "@/src/models/movieModels/ComponentsProps";
 
-const HeaderComponent: FC = async () => {
-    const genres = await getGenres();
-
+const HeaderComponent: FC<HeaderComponentProps> = async ({genres}) => {
     return (
         <div className="header-block">
             <div className="header-left-content">
