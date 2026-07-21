@@ -2,10 +2,9 @@ import {type FC} from "react";
 import "./movie-list.css";
 import {MovieListComponentProps} from "@/src/models/movieModels/ComponentsProps";
 import MovieCard from "@/src/components/movieCard/MovieCard";
-import {getGenres, getMoviesByPage, searchMovie} from "@/src/services/api.service";
+import {getMoviesByPage, searchMovie} from "@/src/services/api.service";
 
-const MovieList: FC<MovieListComponentProps> = async ({page, filterGenres, query}) => {
-    const genres = await getGenres();
+const MovieList: FC<MovieListComponentProps> = async ({page, genres, filterGenres, query}) => {
     const movies = query ? (await searchMovie(page, query || "")) : (await getMoviesByPage(page, filterGenres || ""));
 
     return (
